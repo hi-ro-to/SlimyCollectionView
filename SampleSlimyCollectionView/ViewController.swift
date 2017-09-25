@@ -18,7 +18,7 @@ class ViewController: SlimyCollectionViewController {
         defaultPhotoUrl = DemoPhotoUrlList.defaultDemoUrl
         slimyDelegate = self
         diffToLoadNext = 1
-        reuseIdentifier = "simlyCell"
+        reuseIdentifier = "slimyCell"
         
         super.viewDidLoad()
     }
