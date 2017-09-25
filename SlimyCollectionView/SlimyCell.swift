@@ -1,5 +1,5 @@
 //
-//  SimlyCell.swift
+//  SlimyCell.swift
 //  SlimyCollectionView
 //
 //  Created by Hiroto Ichinose on 2017/06/07.
