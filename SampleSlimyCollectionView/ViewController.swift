@@ -67,31 +67,4 @@ extension ViewController: SlimyCollectionViewControllerDelegate {
         loadPhotos(isFirst: false)
     }
     
-    func showImageForImageView(_ imageView: UIImageView, photoUrl: URL) {
-//        imageView.sd_setImage(with: photoUrl, placeholderImage: nil, options: .retryFailed, completed: { img, error, type, url in
-//            UIView.animate(withDuration: 0.3) {
-//                imageView.alpha = 1
-//            }
-//        })
-    }
-    
-    func prepareForPrefetching(url: URL) {
-        let urlStringKey = getUrlStringKey(from: url)
-//        imagePrefetcherList[urlStringKey] = SDWebImagePrefetcher()
-    }
-    
-    func cancelPrefetching(url: URL) {
-        let urlStringKey = getUrlStringKey(from: url)
-//        imagePrefetcherList[urlStringKey]?.cancelPrefetching()
-    }
-    
-    func execPrefetching(url: URL) {
-        let urlStringKey = getUrlStringKey(from: url)
-//        imagePrefetcherList[urlStringKey]?.prefetchURLs([url], progress: nil)
-    }
-    
-    private func getUrlStringKey(from url: URL) -> String {
-        return url.absoluteString
-    }
-    
 }
