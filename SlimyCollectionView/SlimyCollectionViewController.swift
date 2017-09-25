@@ -47,6 +47,9 @@ open class SlimyCollectionViewController: UIViewController {
         // setup collection view cell
         collectionView.register(SlimyCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.showsHorizontalScrollIndicator = false
+        
         if #available(iOS 10.0, *) {
             collectionView?.prefetchDataSource = self
             imageLoadQueue = OperationQueue()
