@@ -11,10 +11,6 @@ import UIKit
 public protocol SlimyCollectionViewControllerDelegate {
     func firstLoad()
     func nextLoad()
-//    func prepareForPrefetching(url: URL)
-//    func cancelPrefetching(url: URL)
-//    func execPrefetching(url: URL)
-//    func showImageForImageView(_ imageView: UIImageView, photoUrl: URL)
 }
 
 open class SlimyCollectionViewController: UIViewController {
@@ -204,21 +200,3 @@ extension SlimyCollectionViewController {
         collectionView?.reloadData()
     }
 }
-
-// MARK: - ImageLoadOperationDelegate
-//extension SlimyCollectionViewController: ImageLoadOperationDelegate {
-//    func cancelPrefetching(url: URL) {
-//        slimyDelegate?.cancelPrefetching(url: url)
-//    }
-//
-//    func execPrefetching(url: URL) {
-//        slimyDelegate?.execPrefetching(url: url)
-//    }
-//}
-//
-//extension SlimyCollectionViewController: SlimyCellDelegate {
-//    func showImageForImageView(_ imageView: UIImageView, photoUrl: URL) {
-//        slimyDelegate?.showImageForImageView(imageView, photoUrl: photoUrl)
-//    }
-//}
-
